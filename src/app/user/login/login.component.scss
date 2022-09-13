@@ -1,0 +1,205 @@
+.head-text {
+    padding: 30px 0;
+
+    h4 {
+        text-align: left;
+        letter-spacing: 0px;
+        color: #141414;
+        text-transform: lowercase;
+        font-size: 22px;
+    }
+}
+
+.login-container {
+    height: 730px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 15px #00000029;
+    margin: 0 0 50px 0px;
+    padding: 30px;
+
+    h3 {
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #141414;
+        text-transform: lowercase;
+        padding-top: 20px;
+    }
+}
+
+.signup-container {
+    height: 730px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 15px #00000029;
+    margin: 0 0 50px 0;
+    padding: 30px;
+
+    h3 {
+        font-size: 18px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #141414;
+        text-transform: lowercase;
+        padding-top: 20px;
+    }
+}
+
+.form-group {
+    margin-top: 32px;
+}
+
+.custom-input {
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    border: 1px solid #DCDCDC;
+    border-radius: 10px;
+    padding: 10px 24px;
+}
+
+::placeholder {
+    color: #9A9A9A;
+    font-size: 13px;
+}
+
+.password-field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+
+    .custom-checkbox {
+        padding: 0 10px;
+    }
+
+    label {
+        padding: 0 10px;
+        text-align: left;
+        letter-spacing: 0px;
+        color: #141414;
+        font-weight: 500;
+        text-transform: lowercase;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+
+        a {
+            padding: 0 10px;
+            text-align: left;
+            letter-spacing: 0px;
+            color: #141414;
+            font-weight: 500;
+            text-transform: lowercase;
+            text-decoration: underline;
+        }
+    }
+}
+
+.button-wrapper {
+    padding-top: 40px;
+
+    .custom-btn {
+        background: #AC0C00 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        text-align: center;
+        letter-spacing: 0.65px;
+        color: #FFFFFF;
+        text-transform: lowercase;
+        opacity: 1;
+        width: 100%;
+        border: 0;
+        padding: 12px 0;
+        transition: all 0.5s ease-in;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+}
+
+.line {
+    display: block;
+    margin: 24px auto;
+    width: 65%;
+
+    h2 {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: center;
+        border-bottom: 1px solid #00000029;
+        position: relative;
+        letter-spacing: 0.5px;
+        color: #141414;
+
+        span {
+            background-color: white;
+            position: relative;
+            top: 10px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.login-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+
+    .facebook-icon {
+        background: #3a579c 0% 0% no-repeat padding-box;
+        border-radius: 10px;
+        width: 45%;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+        cursor: pointer;
+
+        img {
+            width: 20%;
+        }
+
+        h4 {
+            letter-spacing: 0.27px;
+            color: #EBEBEB;
+            text-transform: lowercase;
+            font-size: 14px;
+            margin: 0;
+            padding: 0 0 0 10px;
+        }
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+
+    .google-icon {
+        border: 1px solid #2B2C2D;
+        border-radius: 10px;
+        width: 45%;
+        padding: 8px;
+        display: flex;
+        align-items: center;
+        margin: 0 10px;
+        cursor: pointer;
+
+        img {
+            width: 10%;
+        }
+
+        h4 {
+            letter-spacing: 0.27px;
+            color: #2B2C2D;
+            text-transform: lowercase;
+            font-size: 14px;
+            margin: 0;
+            padding: 0 0 0 10px;
+        }
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+    }
+}
+

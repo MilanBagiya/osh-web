@@ -1,0 +1,157 @@
+.footer {
+    background-color: #000000;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col {
+    h4 {
+        font-size: 22px;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+    }
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    padding: 4px 0;
+}
+
+
+.footer-col {
+    .social-links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        
+        a {
+            img {
+                height: 38px;
+                width: 38px;
+                line-height: 38px;
+                margin: 0 20px 10px 0;
+                text-align: center;
+            }
+        }
+    }
+
+}
+
+ul {
+    padding-left: 0;
+}
+
+a {
+    display: flex;
+    align-items: center;
+
+    .sm-icons {
+        width: 24px;
+        height: 24px;
+        margin: 0 12px 0px 0px;
+    }
+}
+
+.signUp-btn {
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+    color: #FFFFFF;
+    text-transform: capitalize;
+    background-color: #000000;
+    padding: 6px 36px;
+    transition: all 1s ease;
+    width: 11rem;
+
+    &:hover {
+        transition: all 1s ease;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        background-color: #FFFFFF;
+        color: #000000;
+    }
+}
+
+.custom-input {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+    margin: 15px 0;
+    padding: 6px 22px;
+    width: 11rem;
+}
+
+.bottom-line {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h5 {
+        letter-spacing: 0.75px;
+        color: #FEFEFE;
+        opacity: 1;
+        font-size: 12px;
+    }
+
+    .card-section {
+        display: flex;
+        align-items: center;
+
+        .cards {
+            padding: 0px 6px;
+        }
+
+        .knet {
+            width: 58px;
+            height: 34px;
+        }
+
+        .visa {
+            width: 62px;
+            height: 38px;
+        }
+
+        .mastercard {
+            width: 62px;
+            height: 40px;
+        }
+    }
+}
+
+.text-right {
+    text-align: end;
+}
+
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
