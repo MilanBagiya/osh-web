@@ -1,23 +1,80 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-light">
-	<a class="navbar-brand" href="/">Navbar</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{ 'show': isCollapsed }">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-		    <a class="nav-link " href="/">Home <span class="sr-only">(current)</span></a>        
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" >Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" >Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#" >About</a>
-      </li>
-    </ul>
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <div class="container">
+    <a class="navbar-brand" href="#">Osh<span class="sm-text">Moments</span></a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarText"
+      aria-controls="navbarText"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link categories-dropdown"
+            href="#"
+            (mouseover)="changeText=true"
+            (mouseout)="changeText=false"
+            >Categories
+          </a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+        <div class="icon">
+          <i class="fa-solid fa-bag-shopping"></i>
+        </div>
+        <span class="lang">العربية</span>
+        <div class="country">
+          <img src="../../../assets/icons/kuwait.png" class="img-fluid" />
+          <span>Kuwait</span>
+          <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </div>
+      </span>
+    </div>
   </div>
 </nav>
+<div class="dropdown" *ngIf="changeText">
+  <ul>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">lingrie</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">sleep wear</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">robes</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">sween wear & cover ups</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">stoking and hosiery</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">satin</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">plus size</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">loungewear</a>
+    </li>
+  </ul>
+</div>

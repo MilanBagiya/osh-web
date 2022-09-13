@@ -8,16 +8,13 @@ import {
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  isCollapsed = false;
-
-  constructor(){}
+  changeText: boolean;
+  
+  constructor(){
+    this.changeText = false;
+  }
   
   ngOnInit (): void {
     
   }
-
-  toggleNavbar() {
-    this.isCollapsed = !this.isCollapsed;
-  }  
-
 }

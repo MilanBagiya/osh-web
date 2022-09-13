@@ -1,0 +1,306 @@
+    $standardPadding: 30px;
+    $sizeXSmall: 0.5em;
+    $sizeSmall: 0.625em;
+    $sizeMedium: 0.75em;
+    $sizeLarge: 1em;
+    $sizeXLarge: 1.5em;
+    $sizeXXLarge: 3em;
+
+
+    .layout {
+        display: flex;
+        background: #fff;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 5px;
+        width: 100%;
+        box-shadow: 0px 0px 15px -6px rgba(54, 54, 54, 1);
+    }
+
+    .content {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+
+    .content .container {
+        display: flex;
+        flex-grow: 1;
+
+        .user-detail {
+            padding: $standardPadding;
+            box-sizing: border-box;
+
+            .profile-item {
+                display: flex;
+                flex-direction: column;
+                margin: $standardPadding 0;
+                position: relative;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                a.more {
+                    position: absolute;
+                    text-decoration: none;
+                    color: red;
+                    top: 0;
+                    right: 0;
+                    font-size: $sizeSmall;
+                    color: darken(#a8aaad, 10%);
+                }
+
+                >h4 {
+                    color: darken(#a8aaad, 20%);
+                    text-transform: uppercase;
+                    font-size: $sizeMedium;
+                    margin-bottom: $standardPadding/2;
+                }
+            }
+
+            .profile-info {
+                display: flex;
+                align-items: center;
+
+                >img {
+                    width: 100px;
+                    height: 55px;
+                    background-size: cover;
+                    border: 0.5px solid gray;
+                    padding: 4px;
+                }
+
+                .desc {
+                    margin-left: $standardPadding/2;
+
+                    h5 {
+                        color: darken(#a8aaad, 20%);
+                        font-size: $sizeMedium;
+                        margin-top: $standardPadding/3;
+                    }
+
+                    .reviews {
+                        margin-top: $standardPadding;
+                        font-size: $sizeMedium;
+                        color: darken(#a8aaad, 20%);
+
+                        .count {
+                            padding: $standardPadding/4 $standardPadding/3;
+                            color: #fff;
+                            border-radius: 5px/2;
+                            background: #f6ab2e;
+                            margin-right: $standardPadding/4;
+                        }
+                    }
+                }
+            }
+
+            .basic-details {
+                ul.info {
+                    display: flex;
+                    list-style: none;
+
+                    li {
+                        color: darken(#a8aaad, 40%);
+                        font-size: $sizeMedium;
+                        display: flex;
+                        margin-right: $standardPadding;
+
+                        i {
+                            color: darken(#a8aaad, 20%);
+                            margin-right: $standardPadding/3;
+                        }
+                    }
+                }
+            }
+
+            .bio-details {
+                .desc {
+                    color: darken(#a8aaad, 30%);
+                    font-size: $sizeMedium;
+                    line-height: $sizeXLarge * 1.2;
+                }
+            }
+
+            .tags-details .info {
+                font-size: $sizeMedium;
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    background: #252529;
+                    padding: $standardPadding/4 $standardPadding/3;
+                    border-radius: 5px / 3;
+                    color: #fff;
+                    margin-right: $standardPadding/4;
+
+                    &.high {
+                        background: #34ab45;
+                    }
+
+                    &.medium {
+                        background: #f6ab2e;
+                    }
+
+                    &.low {
+                        background: #1765d8;
+                    }
+                }
+            }
+
+            .divider {
+                border-bottom: 0.5px solid lighten(#a8aaad, 20%);
+                height: 1px;
+            }
+        }
+    }
+
+    .user-detail {
+        .associated {
+            .buildings {
+                list-style: none;
+                margin-top: $standardPadding / 2;
+                display: flex;
+
+                li {
+                    display: inline-block;
+                    font-size: $sizeMedium;
+                    max-width: 65px;
+                    margin: 0 $standardPadding / 2;
+                    margin-bottom: auto;
+
+                    &:first-child {
+                        margin-left: 0;
+                    }
+
+                    img {
+                        border-radius: 5px;
+                    }
+
+                    h3 {
+                        margin-top: $standardPadding /3;
+                        line-height: $sizeLarge * 1.4;
+                    }
+
+                    h4 {
+                        margin-top: $standardPadding /3;
+                        color: darken(#a8aaad, 10%);
+                        line-height: $sizeLarge * 1.4;
+                    }
+
+                    &:hover {
+                        opacity: 0.8;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .members .owners {
+            list-style: none;
+            display: flex;
+            margin-top: $standardPadding / 2;
+
+            li {
+                color: #fff;
+                margin: 0 $standardPadding;
+                position: relative;
+                width: 165px;
+                height: 165px;
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                >img {
+                    border-radius: 5px;
+                    position: absolute;
+                    z-index: 0;
+                }
+
+                .desc {
+                    position: absolute;
+                    bottom: 0;
+                    transition: bottom 0.5s;
+                    margin-left: $standardPadding / 1.5;
+                    margin-bottom: $standardPadding / 1.5;
+
+                    h3 {
+                        font-size: $sizeLarge;
+                        margin-bottom: $standardPadding / 3;
+                    }
+
+                    h4 {
+                        font-size: $sizeSmall;
+                        color: lighten(#a8aaad, 10%);
+                    }
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                    cursor: pointer;
+
+                    .desc {
+                        bottom: $standardPadding * 1;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @media(max-width: 767px) {
+        .content .container {
+            .basic-details {
+                ul.info {
+                    display: block !important;
+
+                    li {
+                        padding: 4px !important;
+                    }
+                }
+            }
+        }
+
+        .profile-item {
+            .owners {
+                display: block !important;
+
+                li {
+                    &:first-child {
+                        margin-left: 30px;
+                    }
+                }
+            }
+        }
+
+
+        @media(max-width: 574px) {
+            .content .container {
+                .basic-details {
+                    ul.info {
+                        display: block !important;
+
+                        li {
+                            padding: 4px !important;
+                        }
+                    }
+                }
+            }
+
+            .profile-item {
+                .owners {
+                    display: block !important;
+
+                    li {
+                        &:first-child {
+                            margin-left: 30px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }

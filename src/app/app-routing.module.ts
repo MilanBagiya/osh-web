@@ -5,7 +5,7 @@ import { AuthGuard } from './auth/guard/auth.guard';
 const routes: Routes = [{
     path: '',
     loadChildren: () => import('./user/user.module').then((m) => m.UserModule),
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },  
   // { path: 'not-found', loadChildren: () => import('./not-found/not-found.module').then((m) => m.NotFoundModule) },
   { path: '**', redirectTo: 'not-found' }

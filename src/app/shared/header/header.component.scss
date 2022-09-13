@@ -1,102 +1,129 @@
-a {
-  color: black;
-  cursor: pointer;
-  text-decoration: none;
-  transition: color 0.3s ease;
-  &:hover {
-    color: var(--greenapple);
-  }
-}
-
-.nav {
-  display: grid;
-  grid-template-rows: minmax(min-content, 60px);
-  .brand {
-    cursor: pointer;
-    justify-self: left;
-    margin-left: 15px;
-  }
-  .content {
-    align-content: space-evenly;
-    background-color: var(--greyapple);
-    display: grid;
-    grid-auto-flow: column;
-    place-items: center;
-    position: relative;
-    z-index: 10;
-  }
-  .dropdown {
-    background-color: var(--darkmatter);
-    display: none;
-    margin-top: 60px;
-    position: absolute;
-    text-align: center;
+.navbar {
+    background: #FFFFFF 0% 0% no-repeat;
+    box-shadow: 0px 3px 6px #00000029;
+    height: 4.5rem;
+    position: sticky;
     top: 0;
-    width: 100%;
-    a {
-      color: white;
-      padding: 20px;
-      &:hover {
-        color: var(--greyapple);
-        background-color: var(--greenapple);
-      }
-    }
-    &.show {
-      display: grid;
-    }
-  }
-  .links {
-    display: grid;
-    grid-auto-columns: minmax(min-content, 50px);
-    grid-auto-flow: column;
-    grid-gap: 15px;
-    place-items: center;
-    &.nav-items {
-      justify-self: right;
-      padding-right: 15px;
-    }
-  }
-  .menu {
-    -webkit-user-select: none;
-    display: none;
-    justify-self: right;
-    margin-right: 15px;
-    position: relative;
-    user-select: none;
-    input {
-      -webkit-touch-callout: none;
-      cursor: pointer;
-      display: block;
-      height: 24px;
-      left: -5px;
-      opacity: 0;
-      position: absolute;
-      top: 0;
-      width: 24px;
-      z-index: 2;
-    }
-    label {
-      color: var(--greenapple);
-      font-size: 32px;
-      left: -8px;
-      position: relative;
-      top: -10px;
-    }
+    z-index: 1;
+    transition: all 1s ease;
+
     &:hover {
-      opacity: 0.5;
+        box-shadow: none;
     }
-  }
 }
 
-@media only screen and (max-width: 768px) {
-  .nav {
-    .content {
-      .links {
-        display: none;
-      }
-      .menu {
-        display: initial;
-      }
+.navbar-brand {
+    color: #AC0C00;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 34px;
+
+    .sm-text {
+        display: block;
+        font-size: 8px;
+        line-height: 14px;
+        text-align: center;
     }
-  }
+}
+
+.nav-item {
+    text-align: left;
+    letter-spacing: 0.44px;
+    color: #141414;
+    text-transform: lowercase;
+    opacity: 1;
+    padding: 0 14px;
+    font-weight: 500;
+}
+
+.navbar-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+        .fa-solid {
+            font-size: 20px;
+            padding: 0 8px;
+        }
+
+        .fa-regular {
+            font-size: 20px;
+            padding: 0 8px;
+        }
+    }
+}
+
+.lang {
+    text-align: left;
+    letter-spacing: 0.34px;
+    color: #141414;
+    padding: 0 12px;
+}
+
+.country {
+    padding: 0 12px;
+
+    img {
+        width: 30px;
+        height: 24px;
+    }
+
+    span {
+        padding: 0 12px;
+        text-align: right;
+        font-size: 12px;
+        letter-spacing: 0.6px;
+        color: #141414;
+    }
+}
+
+.dropdown {
+    background: #FFFFFF 0% 0% no-repeat;
+    border-top: 0.5px solid rgba($color: #000000, $alpha: 0.2);
+    box-shadow: 0px 3px 3px #00000029;
+    height: 2.5rem;
+    position: absolute;
+    top: 4.5rem;
+    width: 100%;
+    transition: all 1s ease;
+
+
+    ul {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+
+        li {
+            text-align: left;
+            letter-spacing: 0.44px;
+            text-transform: lowercase;
+            opacity: 1;
+            padding: 4px 10px;
+            font-weight: 500;
+
+            a {
+                color: #141414;
+                opacity: 0.8;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+
+@media(max-width: 767px) {
+    .navbar-collapse {
+        position: inherit;
+        top: 8px;
+        background-color: #FFFFFF;
+    }
+}
+
+@media(max-width: 574px) {
+    .navbar-collapse {
+        position: inherit;
+        top: 8px;
+        background-color: #FFFFFF;
+    }
 }

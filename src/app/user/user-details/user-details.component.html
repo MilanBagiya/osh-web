@@ -1,0 +1,78 @@
+<div class="layout">
+	<section class="content">
+		<div class="container">
+			<section class="user-detail">
+				<div class="profile-info">
+					<img [src]="userDetails?.image" alt="Image 001" />
+					<div class="desc">
+						<h3 class="name">{{userDetails?.first_name}} {{userDetails?.last_name}}</h3>
+						<h5>  {{userDetails?.email}}</h5>
+						<div class="reviews">
+							<span class="count">{{userDetails?.id}} </span>
+							<span> Reviews </span>
+						</div>
+					</div>
+				</div>
+
+				<div class="basic-details profile-item">
+					<h4> Basic Details </h4>
+					<ul class="info">
+						<li> <i class="fa fa-comment-o"> </i> <span> {{userDetails?.email}}</span> </li>
+						<li> <i class="fa fa-mobile"> </i> <span> {{userDetails?.phone}}</span> </li>
+						<li> <i class="fa fa-map-marker"> </i> <span>{{userDetails?.create_date | date: 'dd/MM/yyyy'}}</span> </li>
+					</ul>
+				</div>
+
+				<div class="tags-details profile-item">
+					<h4> Tags </h4>
+					<ul class="info">
+						<li class="high"> Office Management </li>
+						<li class="medium"> Design </li>
+						<li class="low"> Developer </li>
+					</ul>
+				</div>
+
+				<div class="divider profile-item">
+				</div>
+
+				<div class="members profile-item">
+					<ul class="owners">
+						<li>
+							<img src="https://source.unsplash.com/160x160/?ux" alt="Image 001" />
+							<div class="desc">
+								<h3> UI/UX</h3>
+							</div>
+						</li>
+						<li>
+							<img src="https://source.unsplash.com/160x160/?game" alt="Image 001" />
+							<div class="desc">
+								<h3> Game Design </h3>
+							</div>
+						</li>
+						<li>
+							<img src="https://source.unsplash.com/160x160/?code" alt="Image 001" />
+							<div class="desc">
+								<h3> Code </h3>
+							</div>
+						</li>
+						<li>
+							<img src="https://source.unsplash.com/160x160/?website" alt="Image 001" />
+							<div class="desc">
+								<h3> Web Devlopement</h3>
+							</div>
+						</li>
+						<li>
+							<img src="https://source.unsplash.com/160x160/?data" alt="Image 001" />
+							<div class="desc">
+								<h3> Data Mining</h3>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="divider profile-item">
+				</div>
+			</section>
+		</div>
+	</section>
+</div>

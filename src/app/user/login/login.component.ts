@@ -38,13 +38,14 @@ export class LoginComponent implements OnInit {
       this.subs.add(this.apiService
         .userLogin(this.signInForm.value)
         .subscribe((response: ICommanResponseModel<IUserLoginModal[]>) => {
-          if (response) {
-            this.router.navigateByUrl('/dashboard');
+          if (response.status === 200) {
             alert('Logged in Successfully.');
-            this.authService.setLocalStorage(
-              LocalStorePath.first_name,
-              JSON.stringify(response.data)
-            );
+            this.authService.setLocalStorage("data", JSON.stringify(response.data));
+            this.router.navigateByUrl('/user-details');
+          }
+          else {
+            alert('Please enter valid credentials');
+            this.router.navigateByUrl('/');
           }
         })
       )

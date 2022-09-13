@@ -1,5 +1,5 @@
 .head-text {
-    padding: 30px 0;
+    padding: 54px 0 12px 0;
 
     h4 {
         text-align: left;
@@ -7,12 +7,13 @@
         color: #141414;
         text-transform: lowercase;
         font-size: 22px;
+        font-weight: 700;
     }
 }
 
 .login-container {
     height: 730px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat;
     box-shadow: 0px 2px 15px #00000029;
     margin: 0 0 50px 0px;
     padding: 30px;
@@ -24,12 +25,13 @@
         color: #141414;
         text-transform: lowercase;
         padding-top: 20px;
+        font-weight: 700;
     }
 }
 
 .signup-container {
     height: 730px;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: #FFFFFF 0% 0% no-repeat;
     box-shadow: 0px 2px 15px #00000029;
     margin: 0 0 50px 0;
     padding: 30px;
@@ -41,6 +43,7 @@
         color: #141414;
         text-transform: lowercase;
         padding-top: 20px;
+        font-weight: 700;
     }
 }
 
@@ -49,7 +52,7 @@
 }
 
 .custom-input {
-    background: #F8F8F8 0% 0% no-repeat padding-box;
+    background: #F8F8F8 0% 0% no-repeat;
     border: 1px solid #DCDCDC;
     border-radius: 10px;
     padding: 10px 24px;
@@ -99,7 +102,7 @@
     padding-top: 40px;
 
     .custom-btn {
-        background: #AC0C00 0% 0% no-repeat padding-box;
+        background: #AC0C00 0% 0% no-repeat;
         border-radius: 10px;
         text-align: center;
         letter-spacing: 0.65px;
@@ -109,10 +112,14 @@
         width: 100%;
         border: 0;
         padding: 12px 0;
-        transition: all 0.5s ease-in;
+        border: 1px solid #AC0C00;
+        cursor: pointer;
 
         &:hover {
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            border: 1px solid #AC0C00;
+            background: #FFFFFF;
+            color: #AC0C00;
         }
     }
 }
@@ -147,7 +154,7 @@
     padding-top: 40px;
 
     .facebook-icon {
-        background: #3a579c 0% 0% no-repeat padding-box;
+        background: #3a579c 0% 0% no-repeat;
         border-radius: 10px;
         width: 45%;
         padding: 8px;
@@ -203,3 +210,12 @@
     }
 }
 
+.password-input {
+    position: relative;
+
+    i {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+}

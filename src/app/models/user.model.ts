@@ -46,5 +46,5 @@ export interface IRegisterUserModel {
 }
 
 export enum LocalStorePath {
-  first_name = 'first_name'
+  data = 'data'
 }

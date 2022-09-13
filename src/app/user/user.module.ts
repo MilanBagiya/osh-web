@@ -4,6 +4,7 @@ import { SharedModule } from '../shared/shared.module';
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
 import { LoginComponent } from './login/login.component';
+import { UserDetailsComponent } from './user-details/user-details.component';
 
 @NgModule({
     imports: [
@@ -13,7 +14,8 @@ import { LoginComponent } from './login/login.component';
     ],
     declarations: [
         UserComponent,
-        LoginComponent
+        LoginComponent,
+        UserDetailsComponent
     ],
     exports: [
     ]
